@@ -1,0 +1,88 @@
+1.sudo yum update -y
+2. sudo yum install -y docker
+3. sudo service docker start
+	
+
+docker -v
+docker images
+docker pull hello-world
+docker container run d11
+docker rmi image
+docker container ls
+docker container prune
+docker rmi 36
+
+docker pull ubuntu
+docker container ls
+
+docker container stop <container id>
+docker pull tomcat:8.0
+docker container run -it -p 8888:8080 tomcat8:0
+Test the access of web server: http://65.1.84.129:8888/
+
+docker container run -d -it -p 8888:8080 ef 
+docker container logs 40     //40 It is a container id
+
+docker run -it ubuntu
+ls -l
+
+
+---------------
+How to run Hello.java on AWS
+1. Connect to EC2
+2. Make sure the docker is running eg: docker images
+3. Create Hello.Java file in folder /var/programs
+public class Hello {
+
+	public static void main(String[] args) {
+		System.out.println("Hello From Docker");
+	}
+}
+
+4. Create Dockerfile
+FROM java:8  
+COPY . /var/www/java  
+WORKDIR /var/www/java  
+RUN javac Hello.java  
+CMD ["java", "Hello"]  
+
+5. Create an image 
+$ docker build -t myhello . Note: Make sure Dokcerfile exist in current folder
+6. Run the images
+$ Docker container run myhello
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker create --name myhello hello-world
+docker container run -it -p 8888:8080 tomcat8:0
+docker container run --name mysqldb8 -p 3300:3300 -d mysql:8
+docker logs 35
+docker exec –it 35 
+mysql -uroot –ppassword   or mysql  -u root  -p			
+			
+sudo service docker stop
