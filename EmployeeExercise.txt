@@ -1,0 +1,27 @@
+1. Create a Employee Project 
+	- Create a Employee  class with private members
+		- Empno, Name, Address, Salary etc.
+	- Make sure the class are in appropriate packages
+	- Create a EmployeeService Interface  methods for following items such as 
+		- List all employees in sorted order
+		- Find employee by id
+		- Update and employee
+		- delete an employee
+	- Create a EmployeeServive class  implements EmployeeService 
+	- Use Exceptions
+	- Streams and Lambdas
+	- Apply Collections
+	- Use Iterators and For Each loop
+	- Use appropriate access specifiers 
+	- Write the test cases based  on above scenarios
+	- Logging
+	
+Points to be considered:
+--------------------------
+1. Correct structure of project.
+2. Following coding standards
+3. Display all operation on Employees in terms in List.
+
+Good to have:
+	- Database connectivity  with employees
+	
